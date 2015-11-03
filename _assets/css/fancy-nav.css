@@ -1,0 +1,20 @@
+body {font-family: lato;}
+
+/*****************Fancy Nav******************/
+/***general***/
+.main-nav {position: relative; overflow: hidden; }
+.main-nav ul {list-style-type: none; transition: all .3s;
+	width: 100%; }
+.main-nav a {display: block; width: 100%; 
+	border-bottom: 1px solid #fff; padding: 10px;}
+.main-nav {color: #fff;}
+.main-nav > ul {background: blue;}
+.has-dropdown ul{background: red; color: #fff;}
+.has-dropdown .has-dropdown ul{background: yellow; color: #333;}
+.has-dropdown > a:after{content:'\00A0\203A';}
+/*** functional ***/
+.main-nav ul{position: absolute; left: -100%; top: 0;}
+.main-nav ul.active {top: 0; width: 100%; left: 0;
+ 	transition: all .3s; }
+.main-nav ul ul.active {left: 100%; top: 0;} 	
+.main-nav ul ul ul.active {left: 200%; top: 0;}

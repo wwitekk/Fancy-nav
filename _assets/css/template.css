@@ -1,0 +1,19 @@
+/****************Template********************/
+.content{display: table;
+	width: 95%; 
+	margin-left: auto; margin-right: auto;}
+
+.col + .col {margin-top: 20px;}
+.col * + *,
+.inner-vert-mgr > * + * {margin-top: 20px;}
+
+.bg-blue {background: #555B6E; 
+	padding: 20px; color: #fff;}
+
+@media all and (min-width: 600px){
+	.col{float: left; margin-top: 0!important;}
+	.col + .col{padding-left: 2%;} 
+	.col-s{width: 33%;}
+	.col-l{width: 67%;}
+}
+/********************************************/
