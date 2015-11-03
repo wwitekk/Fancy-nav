@@ -34,7 +34,6 @@
 		$('.active').parents('ul:eq(0)').addClass('active');
 		$(this).parents('.active:eq(0)').removeClass('active');
 		setHeight($('.active'));
-
 	});
 
 	$(function(){
